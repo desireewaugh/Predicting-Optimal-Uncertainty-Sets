@@ -1,2 +1,8 @@
-# Predicting Optimal Uncertainty Sets
- Predict the optimal type of uncertainty set for a given dataset, to be used for linear regression.
+\textbf{Overview:}
+The goal of this project is to predict the optimal type of uncertainty set for a given dataset, to be used for linear regression. The optimal type of uncertainty set is defined as one which minimizes the out-of-sample mean squared error. Candidates for uncertainty set types include the Frobenius Norm, Frobenius Two, Frobenius Infinity, Induced One-Two, Induced Two-One, Induced Two-Infinity, and Induced Infinity-Two. 
+
+\textbf{Procedure:}
+Read in R datasets and create a metadataset showing features of each individual dataset (such as number of observations, number of features, domain, etc). For each dataset in the metadataset, determine which type of uncertainty set minimizes out-of-sample mean squared error (this will be the y-variable to predict). Finally, build machine learning models to predict which type of uncertainty set is best for a given dataset.
+
+\textbf{Contributors:}
+This project was the final course project for Machine Learning Under a Modern Optimization Lens at MIT. I worked with Charlie Chimento, my project partner. I created the code to read in R Datasets and create a meta-dataset, optimize over uncertainty sets and find the optimal uncertainty set for a given dataset, and to build Optimal Classification Tree and multinomial logistic regression models. Charlie contributed the code to engineer features, research statistical theory for the report, and wrote the final project paper.
